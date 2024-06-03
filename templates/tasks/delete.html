@@ -4,7 +4,7 @@ body{
     background-color: #638CB8;
 }
 
-input{
+/* input{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -13,7 +13,7 @@ input{
 
 input::placeholder {
   color: #d3d3d3;
-}
+} */
 
 .submit{
     background-color: #6BA3E8;
@@ -48,8 +48,8 @@ input::placeholder {
 <form action="" method="post">
     {% csrf_token %}
     <div class="row">
-        <div class="col-sm-12 text-center">
-            <button id="btnSearch" class="btn btn-primary btn-md center-block" Style="width: 100px;"><a class="btn btn-primary" href="{% url 'index' %}">Cancel</a></button>
+        <div class="center">
+            <button id="btnSearch" class="btn btn-info "><a href="{% url 'index' %}">Cancel</a></button>
             <input class="btn btn-danger" type="submit" name="Confirm">
          </div>
     </div>
